@@ -42,6 +42,11 @@ section {
     opacity: 1;
 }
 
+
+:target {
+    scroll-behavior: smooth;
+}
+
 .hidden{
     display: none !important;
 }
@@ -340,7 +345,14 @@ section .container1{
     margin-bottom: 43px;
 }
 
+.container-filho .habilidades-container3 h2{
+    font-family: "Poppins", sans-serif;
+}
+
 .container-filho .habilidades-info .habilidades-item h4{
+    display: flex;
+    align-items: center;
+    gap: 20px;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
 }
@@ -348,8 +360,9 @@ section .container1{
 .container-filho .habilidades-info .habilidades-item p{
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
-}
+    margin-left: 80px;
 
+}
 
 .container-filho .skills{
     flex: 0 0 50%;
@@ -368,10 +381,12 @@ section .container1{
     font-size: 18px;
 }
 
+
 .container-filho .skills .habilidades-skills .progresso{
     background-color: var(--cor-branca-50);
     height: 7px;
     border-radius: 4px;
+    border: 1px solid #444444;
     width: 100%;
     position: relative;
 }
@@ -385,8 +400,8 @@ section .container1{
     left: 0;
     top: 0;
     height: 100%;
-    border-radius: 4px;
-    background-color: var(--tom-color);
+    border-radius: 4px ;
+    background-color: #007CED;
 }
 
 .container-filho .skills .habilidades-skills .progresso-porcetagem{
