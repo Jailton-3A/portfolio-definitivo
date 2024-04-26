@@ -42,6 +42,10 @@ section {
     opacity: 1;
 }
 
+.hidden{
+    display: none !important;
+}
+
 .div-conteudo {
     padding-left: 270px;
 }
@@ -55,6 +59,45 @@ section {
     max-width: 1600px;
     width: 100%;
     margin: auto;
+}
+
+section .container1{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.habilidades-container3{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.habilidades-container3 h2{
+    font-size: 40px;
+    color: var(--texto-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.habilidades-container3 h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--tom-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.habilidades-container3 h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--tom-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
 }
 
 .container-filho {
@@ -264,4 +307,92 @@ section {
     margin: auto;
     border-radius: 5px;
     height: 400px;
+}
+/*habilidades*/
+
+.habilidades-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.container-filho .habilidades-texto{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.container-filho .habilidades-texto h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--texto-black-900);
+}
+
+.container-filho .habilidades-info{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+.container-filho .habilidades-info .habilidades-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 43px;
+}
+
+.container-filho .habilidades-info .habilidades-item h4{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.container-filho .habilidades-info .habilidades-item p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+
+.container-filho .skills{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+.container-filho .skills .habilidades-skills{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.container-filho .skills .habilidades-skills h5{
+    line-height: 40px;
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+}
+
+.container-filho .skills .habilidades-skills .progresso{
+    background-color: var(--cor-branca-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.container-filho .skills .habilidades-skills{
+    margin-bottom: 30px;
+}
+
+.container-filho .skills .habilidades-skills .progresso .progresso-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--tom-color);
+}
+
+.container-filho .skills .habilidades-skills .progresso-porcetagem{
+    position: absolute;
+    right: 0;
+    color: var(--texto-black-900);
+    top: -40px;
+    line-height: 40px;
 }
