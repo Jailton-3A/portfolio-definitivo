@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
+:root { 
+    --cor-branca:#FFFFFF;
     --cor-branca-900: #f2f2fc;
     --cor-branca-100: #fdf9ff;
     --cor-branca-50: #e8dfec;
@@ -13,7 +14,6 @@ body {
     padding: 0;
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins' sans-serif;
 }
 
 * {
@@ -35,7 +35,7 @@ ul {
 }
 
 section {
-    background: var(--cor-branca-900);
+    background: #222222;
     min-height: 100vh;
     display: block;
     padding: 0 30px;
@@ -48,7 +48,7 @@ section {
 }
 
 .hidden{
-    display: none !important;
+    display: none ;
 }
 
 .div-conteudo {
@@ -71,34 +71,34 @@ section .container1{
     padding-bottom: 70px;
 }
 
-.habilidades-container3{
+.container-geral{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
 }
 
-.habilidades-container3 h2{
+.container-geral h2{
     font-size: 40px;
-    color: var(--texto-black-900);
+    color: var(--cor-branca);
     font-weight: 700;
     position: relative;
 }
 
-.habilidades-container3 h2::before{
+.container-geral h2::before{
     content: '';
     height: 4px;
     width: 50px;
-    background-color: var(--tom-color);
+    background-color: #007CED;
     position: absolute;
     top: 100%;
     left: 0;
 }
 
-.habilidades-container3 h2::after{
+.container-geral h2::after{
     content: '';
     height: 4px;
     width: 25px;
-    background-color: var(--tom-color);
+    background-color: #007CED;
     position: absolute;
     top: 100%;
     left: 0;
@@ -114,6 +114,7 @@ section .container1{
 }
 
 .contrate {
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -122,7 +123,7 @@ section .container1{
     display: inline-block;
     white-space: nowrap;
     border: none;
-    background: var(--tom-color);
+    background: #007CED;
     transition: all 0.3s ease;
     margin: 0.5rem;
 }
@@ -138,7 +139,7 @@ section .container1{
 
 .div-secundaria {
     width: 270px;
-    background: var(--cor-branca-100);
+    background: #333333;
     position: fixed;
     left: 0;
     top: 0;
@@ -167,18 +168,15 @@ section .container1{
     position: relative;
 }
 
-.div-secundaria .icons a span {
-    font-family: 'Clicker Script', cursive;
-    font-size: 40px;
-}
+
 
 .div-secundaria .icons a::before {
     content: '';
     position: absolute;
     width: 20px;
     height: 20px;
-    border-bottom: 5px solid var(--tom-color);
-    border-left: 5px solid var(--tom-color);
+    border-bottom: 5px solid #007CED;
+    border-left: 5px solid #007CED;
     bottom: 0;
     left: 0;
 }
@@ -188,8 +186,8 @@ section .container1{
     position: absolute;
     width: 20px;
     height: 20px;
-    border-top: 5px solid var(--tom-color);
-    border-right: 5px solid var(--tom-color);
+    border-top: 5px solid #007CED;
+    border-right: 5px solid #007CED;
     top: 0;
     right: 0;
 }
@@ -209,13 +207,6 @@ section .container1{
     justify-content: center;
 }
 
-.div-secundaria .nav-alteracao span {
-    height: 2px;
-    width: 18px;
-    background: var(--tom-color);
-    display: inline-block;
-    position: relative;
-}
 
 .div-secundaria .nav-alteracao span::before {
     content: '';
@@ -251,12 +242,12 @@ section .container1{
     font-weight: 600;
     display: block;
     border-bottom: 1px solid var(--cor-branca-50);
-    color: var(--texto-black-900);
+    color: #D9D9D9;
     padding: 5px 15px;
 }
 
 .div-secundaria .nav li a.ativo {
-    color: var(--tom-color);
+    color: #007CED;
 }
 
 .div-secundaria .nav li a i {
@@ -266,7 +257,7 @@ section .container1{
 .home-secao {
     min-height: 100vh;
     display: flex;
-    color: var(--texto-black-900);
+    color: var(--cor-branca);
 }
 
 .home-secao .container-neto {
@@ -275,6 +266,7 @@ section .container1{
 }
 
 .ola {
+    font-family: "Poppins", sans-serif;
     font-size: 28px;
     margin: 15px 0;
 }
@@ -298,7 +290,8 @@ section .container1{
 .home-secao p {
     margin-bottom: 70px;
     font-size: 20px;
-    color: var(--texto-black-700);
+    color: var(--cor-branca);
+    font-family: "Poppins", sans-serif;
 }
 
 .home-secao .home-img {
@@ -326,10 +319,11 @@ section .container1{
 }
 
 .container-filho .habilidades-texto h3{
-    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
     margin-bottom: 15px;
     font-weight: 700;
-    color: var(--texto-black-900);
+    color: var(--cor-branca);
 }
 
 .container-filho .habilidades-info{
@@ -345,8 +339,10 @@ section .container1{
     margin-bottom: 43px;
 }
 
-.container-filho .habilidades-container3 h2{
+.container-filho .container-geral h2{
     font-family: "Poppins", sans-serif;
+    color: var(--cor-branca);
+
 }
 
 .container-filho .habilidades-info .habilidades-item h4{
@@ -355,37 +351,46 @@ section .container1{
     gap: 20px;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
+    color: var(--cor-branca);
 }
 
 .container-filho .habilidades-info .habilidades-item p{
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     margin-left: 80px;
-
+    color: #D9D9D9;
 }
 
 .container-filho .skills{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 150%;
     margin-top: 40px;
 }
+
 
 .container-filho .skills .habilidades-skills{
     flex: 0 0 100%;
     max-width: 100%;
 }
 
+.titulo-skills h3{
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 23px;
+    padding-top: 10px;
+}
+
 .container-filho .skills .habilidades-skills h5{
     line-height: 40px;
     font-family: "poppins", sans-serif;
     font-size: 18px;
+    color: var(--cor-branca);
 }
 
 
 .container-filho .skills .habilidades-skills .progresso{
-    background-color: var(--cor-branca-50);
+    background-color: #222222;
     height: 7px;
-    border-radius: 4px;
+    border-radius: 10px ;
     border: 1px solid #444444;
     width: 100%;
     position: relative;
@@ -393,6 +398,7 @@ section .container1{
 
 .container-filho .skills .habilidades-skills{
     margin-bottom: 30px;
+    color: var(--cor-branca);
 }
 
 .container-filho .skills .habilidades-skills .progresso .progresso-in{
@@ -407,7 +413,99 @@ section .container1{
 .container-filho .skills .habilidades-skills .progresso-porcetagem{
     position: absolute;
     right: 0;
-    color: var(--texto-black-900);
+    color: #D9D9D9;
     top: -40px;
     line-height: 40px;
+}
+
+/*Projetos*/
+
+
+.projetos-1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    gap: 25px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  
+@media (max-width:1199px){
+    .div-secundaria{
+        left: -270px;
+    }
+
+    .div-conteudo{
+        padding-left: 0;
+    }
+
+    .section-habilidades .habilidades-content .habilidades-texto .habilidades-info  p{
+        display: block;
+        margin-left: 0;
+    }
+
+    .projetos-1{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
