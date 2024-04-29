@@ -14,6 +14,7 @@ body {
     padding: 0;
     line-height: 1.5;
     font-size: 16px;
+    background: #222222;
 }
 
 * {
@@ -40,15 +41,26 @@ section {
     display: block;
     padding: 0 30px;
     opacity: 1;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
+section .ativo{
+    z-index: 2;
+    opacity: 1;
+}
 
 :target {
     scroll-behavior: smooth;
 }
 
 .hidden{
-    display: none ;
+    display: none;
 }
 
 .div-conteudo {
@@ -361,8 +373,8 @@ section .container1{
     color: #D9D9D9;
 }
 
-.container-filho .skills{
-    flex: 0 0 150%;
+.container-filho .skills {
+    flex: 0 0 100%;
     margin-top: 40px;
 }
 
@@ -498,7 +510,7 @@ section .container1{
         padding-left: 0;
     }
 
-    .section-habilidades .habilidades-content .habilidades-texto .habilidades-info  p{
+    .section-habilidades .habilidades-content .habilidades-texto .habilidades-info   p{
         display: block;
         margin-left: 0;
     }
@@ -508,4 +520,15 @@ section .container1{
         flex-direction: column;
     }
 
+}
+
+@media(max-width:991px){
+    .home-secao .container-neto{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home-secao .home-img{
+        display: none;
+    }
 }
