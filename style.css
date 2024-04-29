@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root { 
     --cor-branca:#FFFFFF;
     --cor-branca-900: #f2f2fc;
     --cor-branca-100: #fdf9ff;
     --cor-branca-50: #e8dfec;
-    --texto-black-900: #302e4d;
-    --texto-black-700: #504e70;
+    --cor-azul:#007CED;
+    --cor-preta-1:#222222;
+    
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     padding: 0;
     line-height: 1.5;
     font-size: 16px;
-    background: #222222;
+    background: var(--cor-preta-1);
 }
 
 * {
@@ -36,7 +36,7 @@ ul {
 }
 
 section {
-    background: #222222;
+    background: var(--cor-preta-1);
     min-height: 100vh;
     display: block;
     padding: 0 30px;
@@ -100,7 +100,7 @@ section .container1{
     content: '';
     height: 4px;
     width: 50px;
-    background-color: #007CED;
+    background-color: var(--cor-azul);
     position: absolute;
     top: 100%;
     left: 0;
@@ -110,7 +110,7 @@ section .container1{
     content: '';
     height: 4px;
     width: 25px;
-    background-color: #007CED;
+    background-color: var(--cor-azul);
     position: absolute;
     top: 100%;
     left: 0;
@@ -135,7 +135,7 @@ section .container1{
     display: inline-block;
     white-space: nowrap;
     border: none;
-    background: #007CED;
+    background: var(--cor-azul);
     transition: all 0.3s ease;
     margin: 0.5rem;
 }
@@ -187,8 +187,8 @@ section .container1{
     position: absolute;
     width: 20px;
     height: 20px;
-    border-bottom: 5px solid #007CED;
-    border-left: 5px solid #007CED;
+    border-bottom: 5px solid var(--cor-azul);
+    border-left: 5px solid var(--cor-azul);
     bottom: 0;
     left: 0;
 }
@@ -198,8 +198,8 @@ section .container1{
     position: absolute;
     width: 20px;
     height: 20px;
-    border-top: 5px solid #007CED;
-    border-right: 5px solid #007CED;
+    border-top: 5px solid var(--cor-azul);
+    border-right: 5px solid var(--cor-azul);
     top: 0;
     right: 0;
 }
@@ -214,7 +214,6 @@ section .container1{
     top: 20px;
     border-radius: 5px;
     background: var(--cor-branca-100);
-    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -224,7 +223,7 @@ section .container1{
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--tom-color);
+    background: var(-);
     position: absolute;
     top: -6px;
     left: 0;
@@ -234,7 +233,7 @@ section .container1{
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--tom-color);
+    background: var(--cor-azul);
     position: absolute;
     top: 6px;
     left: 0;
@@ -259,7 +258,7 @@ section .container1{
 }
 
 .div-secundaria .nav li a.ativo {
-    color: #007CED;
+    color: var(--cor-azul);
 }
 
 .div-secundaria .nav li a i {
@@ -287,7 +286,7 @@ section .container1{
     font-family: 'Clicker Script', cursive;
     font-size: 30px;
     font-weight: 700;
-    color: var(--tom-color);
+    color: var(--cor-azul);
 }
 
 .profissao {
@@ -296,7 +295,7 @@ section .container1{
 }
 
 .tipo {
-    color: var(--tom-color);
+    color: var(--cor-azul);
 }
 
 .home-secao p {
@@ -400,7 +399,7 @@ section .container1{
 
 
 .container-filho .skills .habilidades-skills .progresso{
-    background-color: #222222;
+    background-color: var(--cor-preta-1);
     height: 7px;
     border-radius: 10px ;
     border: 1px solid #444444;
@@ -419,7 +418,7 @@ section .container1{
     top: 0;
     height: 100%;
     border-radius: 4px ;
-    background-color: #007CED;
+    background-color: var(--cor-azul);
 }
 
 .container-filho .skills .habilidades-skills .progresso-porcetagem{
