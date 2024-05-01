@@ -326,14 +326,52 @@ span {
 }
 /*habilidades*/
 
-.habilidades-content{
-    flex: 0 0 100%;
-    max-width: 100%;
+.habilidades-subtitulo{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
 }
 
-.container-filho .habilidades-texto{
-    flex: 0 0 100%;
-    max-width: 100%;
+.habilidades-subtitulo2{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+.habilidades-subtitulo h3{
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    color: var(--cor-branca);
+    padding-bottom: 22px;
+}
+
+.habilidades-subtitulo2 h3{
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    color: var(--cor-branca);
+    padding-bottom: 22px;
+
+}
+
+.container-filho .item-habilidades{
+    padding-bottom: 20px;
+}
+
+.container-filho .item-habilidades h4{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: var(--cor-branca);
+    gap: 20px;
+
+}
+
+.container-filho .item-habilidades p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-left: 80px;
+    color: #D9D9D9;
 }
 
 .container-filho .habilidades-texto h3{
@@ -344,91 +382,49 @@ span {
     color: var(--cor-branca);
 }
 
-.container-filho .habilidades-info{
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 40px;
-}
-
-.container-filho .habilidades-info .habilidades-item{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 43px;
-}
-
 .container-filho .container-geral h2{
     font-family: "Poppins", sans-serif;
     color: var(--cor-branca);
 
 }
 
-.container-filho .habilidades-info .habilidades-item h4{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    color: var(--cor-branca);
-}
-
-.container-filho .habilidades-info .habilidades-item p{
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    margin-left: 80px;
-    color: #D9D9D9;
-}
-
-.container-filho .skills {
-    flex: 0 0 100%;
-    margin-top: 40px;
-}
-
-
-.container-filho .skills .habilidades-skills{
+.habilidades-subtitulo2 .skills-habilidades{
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.titulo-skills h3{
-    font-size: 28px;
-    font-family: "Poppins", sans-serif;
-    padding-bottom: 23px;
-    padding-top: 10px;
-}
-
-.container-filho .skills .habilidades-skills h5{
+.habilidades-subtitulo2 .skills-habilidades h5{
     line-height: 40px;
-    font-family: "poppins", sans-serif;
-    font-size: 18px;
+    font-family:"Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
     color: var(--cor-branca);
+    text-transform: capitalize;
 }
 
-
-.container-filho .skills .habilidades-skills .progresso{
+.habilidades-subtitulo2 .skills-habilidades .progresso{
     background-color: var(--cor-preta-1);
     height: 7px;
-    border-radius: 10px ;
-    border: 1px solid #444444;
+    border-radius: 4px;
+    border: 1.5px solid #444444;
     width: 100%;
     position: relative;
 }
 
-.container-filho .skills .habilidades-skills{
+.habilidades-subtitulo2 .skills-habilidades{
     margin-bottom: 30px;
-    color: var(--cor-branca);
 }
 
-.container-filho .skills .habilidades-skills .progresso .progresso-in{
+.habilidades-subtitulo2 .skills-habilidades .progresso .progresso-in{
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    border-radius: 4px ;
+    border-radius: 4px;
     background-color: var(--cor-azul);
 }
 
-.container-filho .skills .habilidades-skills .progresso-porcetagem{
+.habilidades-subtitulo2 .skills-habilidades .skills-porcetagem{
     position: absolute;
     right: 0;
     color: #D9D9D9;
@@ -436,6 +432,9 @@ span {
     line-height: 40px;
 }
 
+.skills-habilidades{
+    padding-bottom: 29px;
+}
 /*Projetos*/
 
 
@@ -517,10 +516,11 @@ span {
         padding-left: 0;
     }
 
-    .section-habilidades .habilidades-content .habilidades-texto .habilidades-info   p{
+    .section-habilidades .habilidades-subtitulo .habilidades-subtitulo2 .skills-habilidades .skills-porcetagem p{
         display: block;
         margin-left: 0;
     }
+
 
     .projetos-1{
         display: flex;
@@ -537,5 +537,12 @@ span {
 
     .home-secao .home-img{
         display: none;
+    }
+}
+
+@media(max-width:757px){
+    .section-habilidades .habilidades-subtitulo2{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
