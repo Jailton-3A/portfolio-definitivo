@@ -39,7 +39,6 @@ section {
     display: block;
     padding: 0 30px;
     opacity: 1;
-    position: fixed;
     left: 270px;
     top: 0;
     right: 0;
@@ -435,10 +434,7 @@ span {
 .skills-habilidades{
     padding-bottom: 29px;
 }
-<<<<<<< HEAD
 /*Projetos*/
-=======
->>>>>>> dd1effb370cb7f3a843db6d55ebb8462b8815d54
 
 /*soft kills*/
 
