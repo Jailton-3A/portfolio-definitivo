@@ -435,8 +435,70 @@ span {
 .skills-habilidades{
     padding-bottom: 29px;
 }
+<<<<<<< HEAD
 /*Projetos*/
+=======
+>>>>>>> dd1effb370cb7f3a843db6d55ebb8462b8815d54
 
+/*soft kills*/
+
+.soft-itens{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+.soft-itens2{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+
+.soft-itens  .timeline-caixa{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.soft-itens2 .timeline-caixa{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.soft-itens .timeline{
+    background-color: var(--cor-branca-100);
+    padding: 30px 15px;
+    border: 1px solid var(--cor-preta-1);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.soft-itens .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+
+.soft-itens2 .timeline{
+    background-color: var(--cor-branca-100);
+    padding: 30px 15px;
+    border: 1px solid var(--cor-preta-1);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.soft-itens2 .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+
+
+/*Projetos*/
 
 .projetos-1{
     display: flex;
@@ -506,6 +568,41 @@ span {
     scale: 0;
     transform: rotate(-45deg);
   }
+
+  /*contato*/
+
+  .div-contato{
+    flex: 0 0 35%;
+    max-width: 100%;
+  }
+
+  .div-contato .contato-itens{
+    margin: 33px;
+  }
+
+  .div-contato .contato-itens h4{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    color: var(--cor-branca);
+    gap: 17px;
+  }
+
+  .div-contato .contato-itens p{
+    padding: 0 0 0 90px;
+    color: #D9D9D9;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+  }
+
+  .div-contato2{
+    flex: 0 0 65%;
+    max-width: 100%;
+  }
+
+.div-contato2 .contato-usuario{
+    margin: 26px;
+}
   
 @media (max-width:1199px){
     .div-secundaria{
