@@ -33,7 +33,7 @@ ul {
 
 }
 
-section {
+.section {
     background: var(--cor-preta-1);
     min-height: 100vh;
     display: block;
@@ -531,15 +531,15 @@ span {
 
 .projetos-1{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 10%;
     gap: 25px;
 }
 
 .card {
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -663,7 +663,7 @@ span {
 }
 
 .contato-usuario2{
-    margin-left: 170px;
+    margin-left: 215px;
 }
 
   
