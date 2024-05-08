@@ -256,6 +256,7 @@ section .container1{
 
 .div-secundaria .nav a {
     font-size: 16px;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     display: block;
     border-bottom: 1px solid var(--cor-branca-50);
